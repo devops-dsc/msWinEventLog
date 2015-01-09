@@ -1,5 +1,5 @@
 
-function Show-xWinEventLogExamples
+function Show-msWinEventLogExamples
 {
     $path = Join-Path $PSScriptRoot 'Examples\*'
     if ($Host.Name -eq 'Windows PowerShell ISE Host')

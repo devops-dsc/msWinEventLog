@@ -1,11 +1,11 @@
-﻿cls
+cls
 
 $before = Get-WinEvent -ListLog "Microsoft-Windows-MSPaint/Admin" 
 configuration Demo1
 {
-    Import-DscResource -module xWinEventLog
+    Import-DscResource -module msWinEventLog
 
-    xWinEventLog Demo1
+    msWinEventLog Demo1
     {
         LogName            = "Microsoft-Windows-MSPaint/Admin"
         IsEnabled          = $true
